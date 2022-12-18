@@ -1,3 +1,3 @@
 # In development ⚙️
 
-# `react-hook-use-country 🌏`
+# `country-utils 🌏`
