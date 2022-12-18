@@ -1,6 +1,6 @@
-export const sum = (a: number, b: number) => {
-  if ('development' === process.env.NODE_ENV) {
-    console.log('dev only output');
-  }
-  return a + b;
-};
+import getCountryCode from "./getCountryCode";
+import getCountryData from "./getCountryData";
+import getCountryFlag from "./getCountryFlag";
+import getCountryName from "./getCountryName";
+
+export { getCountryData, getCountryCode, getCountryFlag, getCountryName };
