@@ -18,7 +18,8 @@
     "prepare": "dts build",
     "size": "size-limit",
     "start": "dts watch",
-    "test": "dts test --watch"
+    "test": "dts test",
+    "test:dev": "dts test --watch"
   },
   "husky": {
     "hooks": {
