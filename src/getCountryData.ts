@@ -11,13 +11,13 @@ export default function getCountryData(country: string) {
 
   if (country.length < 2) throw new Error("Invalid country name or code");
 
-  // parameter country is a country name (eg. Poland)
+  // Parameter country is a country name (eg. Poland)
   if (country.length > 2) {
     countryData.code = getCountryCode(country);
     countryData.name = getCountryName(countryData.code);
   }
 
-  // parameter country is a country code (eg. PL)
+  // Parameter country is a country code (eg. PL)
   if (country.length === 2) {
     countryData.name = getCountryName(country);
     countryData.code = getCountryCode(countryData.name);
