@@ -7,7 +7,5 @@ export default function getCountryFlag(countryCode: string) {
 
   const countryFlag = String.fromCodePoint(...codePoints);
 
-  console.log(countryFlag);
-
   return countryFlag;
 }
