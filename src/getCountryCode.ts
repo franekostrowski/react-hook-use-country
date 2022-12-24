@@ -11,5 +11,7 @@ export default function getCountryCode(countryName: string) {
 
   if (countryCodes.length === 0) throw new Error("Invalid country name");
 
-  return countryCodes[0];
+  const countryCode = countryCodes[0];
+
+  return countryCode;
 }

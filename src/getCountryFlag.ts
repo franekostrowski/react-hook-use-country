@@ -5,5 +5,9 @@ export default function getCountryFlag(countryCode: string) {
     // @ts-ignore
     .map((char) => 127397 + char.charCodeAt());
 
-  return String.fromCodePoint(...codePoints);
+  const countryFlag = String.fromCodePoint(...codePoints);
+
+  console.log(countryFlag);
+
+  return countryFlag;
 }
