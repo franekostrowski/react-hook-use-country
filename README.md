@@ -1,10 +1,8 @@
-# In development ⚙️
-
 # `country-utils 🌏`
 
 Dealing with codes, flags and other country related logic is boring and repetetive. Many projects (including mine) need functions for that kind of thing so I started this project. It simplifies everything for you. Enjoy 🤗
 
-## Installation
+## ~Installation~ not installable yet ⚠️
 
 ```
 npm i @franekostrowski/country-utils
