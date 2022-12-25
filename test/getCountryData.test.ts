@@ -3,7 +3,7 @@ import type { Country } from "../src/types";
 
 describe("getCountryData", () => {
   it("Should return an empty object because given country name is invalid", () => {
-    const result = getCountryData("awdkjhwa");
+    const result = getCountryData("XXXX");
     expect(result).toEqual({});
   });
 
