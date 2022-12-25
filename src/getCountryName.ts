@@ -1,7 +1,10 @@
+import isCountryCode from "./isCountryCode";
 import listOfCountries from "./listOfCountries";
 
 export default function getCountryName(countryCode: string) {
-  if (countryCode.length !== 2) throw new Error("Invalid country code");
+  if (!isCountryCode(countryCode)) return "";
 
-  return listOfCountries[countryCode.toUpperCase()];
+  const countryName = listOfCountries[countryCode.toUpperCase()];
+
+  return countryName;
 }
