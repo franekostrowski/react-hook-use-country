@@ -1,6 +1,11 @@
 import { getCountryCode } from "../src/index";
 
 describe("getCountryCode", () => {
+  it("Should return an empty string because given country name is invalid", () => {
+    const result = getCountryCode("awlkdjhawdk");
+    expect(result).toEqual("");
+  });
+
   it("Should return correct country code for Poland", () => {
     const expectedResult = "PL";
     const result = getCountryCode("Poland");

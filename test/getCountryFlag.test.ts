@@ -5,4 +5,16 @@ describe("getCountryFlag", () => {
     const result = getCountryFlag("XX");
     expect(result).toEqual("");
   });
+
+  it("Should return correct flag for country code 'PL'", () => {
+    const expectedResult = "🇵🇱";
+    const result = getCountryFlag("PL");
+    expect(result).toEqual(expectedResult);
+  });
+
+  it("Should return correct flag for country code 'nO' (wrong capitalization)", () => {
+    const expectedResult = "🇳🇴";
+    const result = getCountryFlag("nO");
+    expect(result).toEqual(expectedResult);
+  });
 });
