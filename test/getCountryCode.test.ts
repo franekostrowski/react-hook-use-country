@@ -1,10 +1,6 @@
 import { getCountryCode } from "../src/index";
 
 describe("getCountryCode", () => {
-  it("Should throw because given country does not exist", () => {
-    expect(() => getCountryCode("akdjhbwad")).toThrow();
-  });
-
   it("Should return correct country code for Poland", () => {
     const expectedResult = "PL";
     const result = getCountryCode("Poland");

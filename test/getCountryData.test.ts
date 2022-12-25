@@ -2,8 +2,14 @@ import { getCountryData } from "../src/index";
 import type { Country } from "../src/types";
 
 describe("getCountryData", () => {
-  it("Should throw because given country name is invalid", () => {
-    expect(() => getCountryData("akdjwhwad")).toThrow();
+  it("Should return an empty object because given country name is invalid", () => {
+    const result = getCountryData("awdkjhwa");
+    expect(result).toEqual({});
+  });
+
+  it("Should return an empty object because given country code is invalid", () => {
+    const result = getCountryData("12");
+    expect(result).toEqual({});
   });
 
   it("Should return correct country data for country code 'PL'", () => {
