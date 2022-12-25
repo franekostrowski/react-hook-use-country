@@ -1,8 +1,8 @@
 {
-  "name": "country-utils",
-  "version": "0.1.0",
+  "name": "@franekostrowski/country-utils",
+  "version": "1.0.0",
   "license": "MIT",
-  "author": "franciszekostrowski",
+  "author": "@franekostrowski",
   "main": "dist/index.js",
   "module": "dist/country-utils.esm.js",
   "typings": "dist/index.d.ts",
