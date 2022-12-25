@@ -2,7 +2,7 @@
 
 Dealing with codes, flags and other country related logic is boring and repetetive. Many projects (including mine) need functions for that kind of thing so I started this project. It simplifies everything for you. Enjoy 🤗
 
-## ~Installation~ not installable yet ⚠️
+## Installation
 
 ```
 npm i @franekostrowski/country-utils
@@ -37,7 +37,7 @@ interface Country {
 ```typescript
 const countryData = getCountryData("PL");
 
-console.log(countryData); 
+console.log(countryData);
 // { name: "Poland", code: "PL", flag: "🇵🇱" }
 ```
 
@@ -46,7 +46,7 @@ console.log(countryData);
 ```typescript
 const countryData = getCountryData("Sweden");
 
-console.log(countryData); 
+console.log(countryData);
 // { name: "Sweden", code: "SE", flag: "🇸🇪" }
 ```
 
@@ -59,9 +59,9 @@ getCountryCode(countryName: string): string
 #### Example
 
 ```typescript
-const countryCode = getCountryCode("Poland")
+const countryCode = getCountryCode("Poland");
 
-console.log(countryCode); 
+console.log(countryCode);
 // "PL"
 ```
 
@@ -74,12 +74,11 @@ getCountryFlag(countryCode: string): string
 #### Example
 
 ```typescript
-const countryFlag = getCountryFlag("PL")
+const countryFlag = getCountryFlag("PL");
 
-console.log(countryFlag); 
+console.log(countryFlag);
 // "🇵🇱"
 ```
-
 
 ### getCountryName
 
@@ -90,8 +89,8 @@ getCountryName(countryCode: string): string
 #### Example
 
 ```typescript
-const countryName = getCountryName("PL")
+const countryName = getCountryName("PL");
 
-console.log(countryName); 
+console.log(countryName);
 // "Poland"
 ```

@@ -1,5 +1,9 @@
 {
   "name": "@franekostrowski/country-utils",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/franekostrowski/country-utils"
+  },
   "version": "1.0.0",
   "license": "MIT",
   "author": "@franekostrowski",
