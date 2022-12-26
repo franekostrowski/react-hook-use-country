@@ -1,6 +1,11 @@
 import isCountryName from "./isCountryName";
 import listOfCountries from "./listOfCountries";
 
+/**
+ *  @function returns country code for given country name
+ *  @param {string} countryName - country name
+ *  @returns {string} two-letter country code
+ * */
 export default function getCountryCode(countryName: string) {
   if (!isCountryName(countryName)) return "";
 

@@ -1,5 +1,10 @@
 import isCountryCode from "./isCountryCode";
 
+/**
+ *  @function returns country emoji flag for given country code
+ *  @param {string} countryCode - country code
+ *  @returns {string} string with emoji flag
+ * */
 export default function getCountryFlag(countryCode: string) {
   if (!isCountryCode(countryCode)) return "";
 
