@@ -3,8 +3,8 @@ import listOfCountries from "./listOfCountries";
 
 /**
  *  @function returns country code for given country name
- *  @param {string} countryName - country name
- *  @returns {string} two-letter country code
+ *  @param countryName - country name
+ *  @returns two-letter country code or empty string if no country code was found
  * */
 export default function getCountryCode(countryName: string) {
   if (!isCountryName(countryName)) return "";

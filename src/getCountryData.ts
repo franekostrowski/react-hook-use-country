@@ -7,8 +7,8 @@ import type { Country } from "./types";
 
 /**
  *  @function returns country data for given country code or name
- *  @param {string} country - country code such as 'PL' or full country name eg. Poland
- *  @returns {Country} object with country data or empty object if given country was not found
+ *  @param country - country code such as 'PL' or full country name eg. Poland
+ *  @returns object with country data or empty object if given country was not found
  * */
 export default function getCountryData(country: string): Country | {} {
   const countryData = {
