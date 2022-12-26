@@ -4,7 +4,7 @@
     "type": "git",
     "url": "git://github.com/franekostrowski/country-utils"
   },
-  "version": "1.0.1",
+  "version": "1.1.0",
   "license": "MIT",
   "author": "@franekostrowski",
   "main": "dist/index.js",
