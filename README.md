@@ -35,6 +35,8 @@ interface Country {
 #### Example #1
 
 ```typescript
+import { getCountryData } from "@franekostrowski/country-utils";
+
 const countryData = getCountryData("PL");
 
 console.log(countryData);
@@ -44,6 +46,8 @@ console.log(countryData);
 #### Example #2
 
 ```typescript
+import { getCountryData } from "@franekostrowski/country-utils";
+
 const countryData = getCountryData("Sweden");
 
 console.log(countryData);
@@ -59,6 +63,8 @@ getCountryCode(countryName: string): string
 #### Example
 
 ```typescript
+import { getCountryCode } from "@franekostrowski/country-utils";
+
 const countryCode = getCountryCode("Poland");
 
 console.log(countryCode);
@@ -74,6 +80,8 @@ getCountryFlag(countryCode: string): string
 #### Example
 
 ```typescript
+import { getCountryFlag } from "@franekostrowski/country-utils";
+
 const countryFlag = getCountryFlag("PL");
 
 console.log(countryFlag);
@@ -89,6 +97,8 @@ getCountryName(countryCode: string): string
 #### Example
 
 ```typescript
+import { getCountryName } from "@franekostrowski/country-utils";
+
 const countryName = getCountryName("PL");
 
 console.log(countryName);
