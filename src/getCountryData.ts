@@ -3,8 +3,14 @@ import getCountryFlag from "./getCountryFlag";
 import getCountryName from "./getCountryName";
 import isCountryCode from "./isCountryCode";
 import isCountryName from "./isCountryName";
+import type { Country } from "./types";
 
-export default function getCountryData(country: string) {
+/**
+ *  @function returns country data for given country code or name
+ *  @param {string} country - country code such as 'PL' or full country name eg. Poland
+ *  @returns {Country} object with country data or empty object if given country was not found
+ * */
+export default function getCountryData(country: string): Country | {} {
   const countryData = {
     name: "",
     code: "",
