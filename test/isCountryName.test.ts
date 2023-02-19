@@ -1,6 +1,11 @@
 import isCountryName from "../src/isCountryName";
 
 describe("isCountryName", () => {
+  it("Should return an empty string", () => {
+    const result = isCountryName("");
+    expect(result).toEqual(false);
+  });
+
   it("Should return false because given string is not a country name", () => {
     const expectedResult = false;
     const result = isCountryName("XX");

@@ -1,6 +1,11 @@
 import { getCountryName } from "../src/index";
 
 describe("getCountryName", () => {
+  it("Should return an empty string", () => {
+    const result = getCountryName("");
+    expect(result).toEqual("");
+  });
+
   it("Should return an empty string because given country code is invalid", () => {
     const result = getCountryName("XX");
     expect(result).toEqual("");

@@ -2,6 +2,11 @@ import { getCountryData } from "../src/index";
 import type { Country } from "../src/types";
 
 describe("getCountryData", () => {
+  it("Should return an empty string", () => {
+    const result = getCountryData("");
+    expect(result).toEqual({});
+  });
+
   it("Should return an empty object because given country name is invalid", () => {
     const result = getCountryData("XXXX");
     expect(result).toEqual({});

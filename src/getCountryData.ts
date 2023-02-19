@@ -11,6 +11,8 @@ import type { Country } from "./types";
  *  @returns object with country data or empty object if given country was not found
  * */
 export default function getCountryData(country: string): Country | {} {
+  if (!country) return {};
+
   const countryData = {
     name: "",
     code: "",
