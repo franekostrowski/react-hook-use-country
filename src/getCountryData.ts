@@ -8,10 +8,10 @@ import type { Country } from "./types";
 /**
  *  @function returns country data for given country code or name
  *  @param country - country code such as 'PL' or full country name eg. Poland
- *  @returns object with country data or empty object if given country was not found
+ *  @returns object with country data or null if given country was not found
  * */
-export default function getCountryData(country: string): Country | {} {
-  if (!country) return {};
+export default function getCountryData(country: string): Country | null {
+  if (!country) return null;
 
   const countryData = {
     name: "",
@@ -21,14 +21,14 @@ export default function getCountryData(country: string): Country | {} {
 
   // Parameter country is a country name (eg. Poland)
   if (country.length > 2) {
-    if (!isCountryName(country)) return {};
+    if (!isCountryName(country)) return null;
     countryData.code = getCountryCode(country);
     countryData.name = getCountryName(countryData.code);
   }
 
   // Parameter country is a country code (eg. PL)
   if (country.length === 2) {
-    if (!isCountryCode(country)) return {};
+    if (!isCountryCode(country)) return null;
     countryData.name = getCountryName(country);
     countryData.code = getCountryCode(countryData.name);
   }
