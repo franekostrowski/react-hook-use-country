@@ -30,7 +30,7 @@ interface Country {
 }
 ```
 
-- `country` - country code such as 'PL' or full country name eg. Poland
+- `country` - country code such as 'PL' or full country name eg. 'Poland'
 
 #### Example #1
 
