@@ -54,7 +54,7 @@
     "@size-limit/preset-small-lib": "^8.1.0",
     "@tsconfig/recommended": "^1.0.1",
     "@typescript-eslint/eslint-plugin": "^5.59.7",
-    "@typescript-eslint/parser": "^5.46.1",
+    "@typescript-eslint/parser": "^5.59.11",
     "dts-cli": "^2.0.3",
     "eslint": "^8.39.0",
     "eslint-config-standard": "^17.0.0",
