@@ -58,7 +58,7 @@
     "dts-cli": "^2.0.3",
     "eslint": "^8.39.0",
     "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-import": "^2.28.0",
     "eslint-plugin-n": "^15.7.0",
     "eslint-plugin-promise": "^6.1.1",
     "husky": "^8.0.3",
