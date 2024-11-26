@@ -64,6 +64,6 @@
     "husky": "^8.0.3",
     "size-limit": "^8.1.0",
     "tslib": "^2.5.2",
-    "typescript": "^5.0.4"
+    "typescript": "^5.3.3"
   }
 }
